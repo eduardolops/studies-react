@@ -1,5 +1,12 @@
 import React from 'react'
 
-export default props => (
-    <h1>Hello: {props.value}</h1>
+const First = props => (
+    <div>
+        <h1>Fist Component</h1>
+        <p>I love react \o/</p>
+    </div>
 )
+
+const Second = props => <h1>Second Component</h1>
+
+export { First, Second }
