@@ -1,5 +1,12 @@
 import React from 'react'
 import ReactDom  from 'react-dom'
-import LopesFamily from './family'
+import Family from './family'
+import Member from './member'
 
-ReactDom.render(<LopesFamily />, document.getElementById('app'));
+ReactDom.render(
+    <Family lastName="Lopes">
+        <Member name="Eduardo" />
+        <Member name="Evandro" />
+        <Member name="Everton" />
+    </Family>
+, document.getElementById('app'));

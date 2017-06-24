@@ -1,13 +1,9 @@
 import React from 'react'
-import Member from './member'
+import { childrenWithProps } from '../utils/reactUtils'
 
-export default () => (
+export default props => (
     <div>
-        <Member name="Luiz H." lastName="Lopes" />
-        <Member name="Eleni D." lastName="Lopes" />
-        <Member name="Everton" lastName="Lopes" />
-        <Member name="Evandro" lastName="Lopes" />
-        <Member name="Eduardo" lastName="Lopes" />
+        <h1>Familia:</h1>
+        { childrenWithProps( props.children, props ) }
     </div>
 )
-
