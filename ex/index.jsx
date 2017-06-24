@@ -1,4 +1,5 @@
 import React from 'react'
 import ReactDom  from 'react-dom'
 
-ReactDom.render(<h1>Hello ReactJS</h1>, document.getElementById('app'));
+let render = <h1>Hello ReactJS first application  \o/</h1>
+ReactDom.render(render, document.getElementById('app'));
