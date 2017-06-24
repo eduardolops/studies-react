@@ -1,5 +1,5 @@
 import React from 'react'
 import ReactDom  from 'react-dom'
-import ClassComponent from './classComponent'
+import Count from './Count'
 
-ReactDom.render(<ClassComponent />, document.getElementById('app'));
+ReactDom.render(<Count label="Contar: " initialValue={10} />, document.getElementById('app'));
