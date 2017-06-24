@@ -1,10 +1,5 @@
 import React from 'react'
 import ReactDom  from 'react-dom'
-import {First, Second} from './component'
+import LopesFamily from './family'
 
-ReactDom.render(
-    <div>
-        <First />
-        <Second />
-    </div>
-    , document.getElementById('app'));
+ReactDom.render(<LopesFamily />, document.getElementById('app'));
