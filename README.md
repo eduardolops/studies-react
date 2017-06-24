@@ -1,3 +1,3 @@
 # studies-react
 
-# my studies in reactjs 
+my studies in reactjs 
