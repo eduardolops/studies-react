@@ -1,5 +1,5 @@
 import React from 'react'
 import ReactDom  from 'react-dom'
-import Count from './Count'
+import Bind from './Bind'
 
-ReactDom.render(<Count label="Contar: " initialValue={10} />, document.getElementById('app'));
+ReactDom.render(<Bind initialValue="text" />, document.getElementById('app'));
