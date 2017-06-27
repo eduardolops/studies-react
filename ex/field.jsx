@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class Bind extends Component {
+class Field extends Component {
 
     constructor(props){
         super(props)
@@ -20,4 +20,4 @@ class Bind extends Component {
 
 }
 
-export default Bind
+export default Field
