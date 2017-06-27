@@ -4,18 +4,21 @@ class Field extends Component {
 
     constructor(props){
         super(props)
-        this.handlerChange = this.handlerChange
+        this.state = { value: props.initialValue }
+        this.handleChange = this.handleChange.bind(this)
     }
 
-    handlerChange(){
-        this.setState({ value: initialValue })
+    handleChange(event){
+        this.setState({ value: event.target.value })
     }
 
     render(){
-        <div>
-            <h3>this.state.value</h3>
-            <input type="text" onChange="this.handlerChange" />
-        </div>
+        return (
+            <div>
+                <label>{this.state.value}</label><br />
+                <input onChange={this.handleChange} value={this.state.value} />
+            </div>
+        )
     }
 
 }
